@@ -3,10 +3,11 @@ import Mermaid from '@/components/Mermaid';
 const MyPage: React.FC = () => {
   const chart = `
     graph TD
-    A[Hard edge] -->|Link text| B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
+    A[Start] --> B[Process]
+    B --> C[End]
+    click A "https://example.com" "Tooltip for link"
+    click B "https://example.com/process" "Go to process page"
+    click C "https://example.com/end" "End page"
   `;
 
   return (
