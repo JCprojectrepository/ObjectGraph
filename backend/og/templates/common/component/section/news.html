@@ -1,0 +1,67 @@
+{% load static %}
+<section id="news" class="news">
+    <div class="container-fluid pt-5">
+        <h3 class="section-header">
+            <span class="c-green">N</span>ews
+            <p class="text-h7">ニュース</p>
+        </h3>
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12 offset-0 offset-lg-11 mb-5">
+                <div class="card-deck slider">
+                    <div class="card card-rg border-0 rounded m-3 shadow-sm">
+                        <a href="{{ news.url }}">
+                                <img class="card-image card-img-top p-0" src="{% static 'asset/img/photo/sample1.jpg' %}" alt="image01" >
+                        </a>
+                        <div class="card-body card-body--rg">
+                            <a href="{{ news.url }}" class="card-title">
+                                ここにテキストが入ります
+                            </a>
+                        </div>
+                        <br>
+                        <div style="display: inline-flex;">
+                            <small class="text-muted m-4 text-h9 float-center">
+                                2023年1月1日 更新
+                            </small>
+                        </div>
+                    </div>
+                    <div class="card card-rg border-0 rounded m-3 shadow-sm">
+                        <a href="{{ news.url }}">
+                            <div class="zoom-img">
+                                <img class="card-image card-img-top p-0" src="{% static 'asset/img/photo/sample1.jpg' %}" alt="image01" >
+                            </div>
+                        </a>
+                        <div class="card-body card-body--rg">
+                            <a href="{{ news.url }}" class="card-title">
+                                ここにテキストが入ります
+                            </a>
+                        </div>
+                        <br>
+                        <div style="display: inline-flex;">
+                            <small class="text-muted">
+                                {{ news.date|date:"Y年n月j日" }}
+                            </small>
+                        </div>
+                    </div>
+                    <div class="card card-rg border-0 rounded m-3 shadow-sm">
+                        <a href="{{ news.url }}">
+                            <div class="zoom-img">
+                                <img class="card-image card-img-top p-0" src="{% static 'asset/img/photo/sample1.jpg' %}" alt="image01" >
+                            </div>
+                        </a>
+                        <div class="card-body card-body--rg">
+                            <a href="{{ news.url }}" class="card-title">
+                                ここにテキストが入ります
+                            </a>
+                        </div>
+                        <br>
+                        <div style="display: inline-flex;">
+                            <small class="text-muted">
+                                {{ news.date|date:"Y年n月j日" }}
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,6 @@
+@use "../global" as g;
+
+.breadcrumb-trail{
+    background-color: g.$light-gray;
+    padding: 0.3rem 0.5rem 0.3rem 1.0rem;
+}

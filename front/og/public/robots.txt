@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://alto-software.com/
+
+# Sitemaps
+Sitemap: https://alto-software.com/sitemap.xml

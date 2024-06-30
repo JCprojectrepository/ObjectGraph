@@ -1,0 +1,370 @@
+@use "../global" as g;
+
+
+/*---------------------------- ボタンサイズ ----------------------------*/
+$width-rg: auto;
+$height-rg: 44px;
+
+.btn{
+    border-radius:3px;
+    border-width: 1.3px;
+    font-size: g.$text-h7;
+    font-family: g.$noto-sans;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+/*---------------------------- Button-Color ----------------------------*/
+
+.btn-general{
+  color: g.$black;
+  background-color: g.$white;
+  border-color: g.$gray;
+}
+.btn-general:hover{
+  border-color:g.$gray;
+  color: g.$black;
+  background-color: #e2e2e2;
+}
+
+.btn-black{
+    color: g.$white;
+    background-color: g.$black;
+    border-color: g.$black;
+}
+.btn-black:hover{
+    border-color: g.$black;
+    color: g.$black;
+    background-color: g.$white;
+}
+.btn-rv-black{
+    color: g.$black;
+    background-color: g.$white;
+    border-color: g.$black;
+}
+.btn-rv-black:hover{
+    border-color: g.$black;
+    color: g.$white;
+    background-color: g.$black;
+}
+.btn-red{
+    color: g.$white;
+    background-color: g.$red;
+    border-color: g.$red;
+}
+.btn-red:hover{
+    border-color: g.$red;
+    color: g.$red;
+    background-color: g.$white;
+}
+.btn-rv-red{
+    color: g.$red;
+    background-color: g.$white;
+    border-color: g.$red;
+}
+.btn-rv-red:hover{
+    border-color: g.$red;
+    color: g.$white;
+    background-color: g.$red;
+}
+.btn-yellow{
+    color: g.$white;
+    background-color: g.$yellow;
+    border-color: g.$yellow;
+}
+.btn-yellow:hover{
+    border-color: g.$yellow;
+    color: g.$yellow;
+    background-color: g.$white;
+}
+.btn-rv-yellow{
+    color: g.$yellow;
+    background-color: g.$white;
+    border-color: g.$yellow;
+}
+.btn-rv-yellow:hover{
+    border-color: g.$yellow;
+    color: g.$white;
+    background-color: g.$yellow;
+}
+.btn-blue{
+    color: g.$white;
+    background-color: g.$blue;
+    border-color: g.$blue;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+}
+.btn-blue:hover{
+    border-color: g.$blue;
+    color: g.$blue;
+    background-color: g.$white;
+}
+.btn-rv-blue{
+    color: g.$blue;
+    background-color: g.$white;
+    border-color: g.$blue;
+}
+.btn-rv-blue:hover{
+    border-color: g.$blue;
+    color: g.$white;
+    background-color: g.$blue;
+}
+.btn-light-blue{
+    color: g.$white;
+    background-color: g.$light-blue;
+    border-color: g.$light-blue;
+}
+.btn-light-blue:hover{
+    border-color: g.$light-blue;
+    color: g.$light-blue;
+    background-color: g.$white;
+}
+.btn-rv-light-blue{
+    color: g.$light-blue;
+    background-color: g.$white;
+    border-color: g.$light-blue;
+}
+.btn-rv-light-blue:hover{
+    border-color: g.$light-blue;
+    color: g.$white;
+    background-color: g.$light-blue;
+}
+.btn-green{
+    color: g.$white;
+    background-color: g.$green;
+    border-color: g.$green;
+}
+.btn-green:hover{
+    border-color: g.$green;
+    color: g.$green;
+    background-color: g.$white;
+}
+.btn-rv-green{
+    color: g.$green;
+    background-color: g.$white;
+    border-color: g.$green;
+}
+.btn-rv-green:hover{
+    border-color: g.$green;
+    color: g.$white;
+    background-color: g.$green;
+}
+.btn-light-green{
+    color: g.$white;
+    background-color: g.$light-green;
+    border-color: g.$light-green;
+}
+.btn-light-green:hover{
+    border-color: g.$light-green;
+    color: g.$light-green;
+    background-color: g.$white;
+}
+.btn-rv-light-green{
+    color: g.$light-green;
+    background-color: g.$white;
+    border-color: g.$light-green;
+}
+.btn-rv-light-green:hover{
+    border-color: g.$light-green;
+    color: g.$white;
+    background-color: g.$light-green;
+}
+.btn-lime{
+  color: g.$white;
+  background-color: g.$lime;
+  border-color: g.$lime;
+}
+.btn-lime:hover{
+  border-color: g.$lime;
+  color: g.$lime;
+  background-color: g.$white;
+}
+.btn-gray{
+    color: g.$white;
+    background-color: g.$gray;
+    border-color: g.$gray;
+}
+.btn-gray:hover{
+    border-color: g.$gray;
+    color: g.$gray;
+    background-color: g.$white;
+}
+.btn-rv-gray{
+    color: g.$gray;
+    background-color: g.$white;
+    border-color: g.$gray;
+}
+.btn-rv-gray:hover{
+    border-color: g.$gray;
+    color: g.$white;
+    background-color: g.$gray;
+}
+.btn-twitter {
+    border-color: g.$twitter;
+    color: g.$white;
+    background-color: g.$twitter;
+  }
+  .btn-facebook {
+    border-color: g.$facebook;
+    color: g.$white;
+    background-color: g.$facebook;
+  }
+  
+
+  /*---------------- button-color ----------------*/
+
+  .btn-transparent {
+    background-color: transparent;
+    border-color: transparent;
+    color:#596674;
+  }
+
+  .dropDown-btn-cstm{
+    max-width: 100%px;
+    color: #3d3d3d;
+    text-decoration: none;
+    transition: .3s;
+  }
+
+  .dropDown-btn-cstm:hover{
+    max-width: 100%;
+    color: #3d3d3d;
+    text-decoration: none;
+    transition: .3s;
+    background-color:#d1d8e0;
+  }
+
+  .close-btn {
+    margin-right: 10vw;
+  }
+
+  .errorslideDown-btn {
+    float: right;
+    font-size: 0.8vw;
+  }
+
+  .backtotop-btn:hover {
+    background-color: #ffffff;
+    border-color: #fed330;
+  }
+
+.no-borderbutton {
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+
+  /*---------------- study-btn ----------------*/
+  
+  #explain-btn:disabled{
+    color:#4b6584;
+    border-color: #ffffff;
+    background-color: #ffffff;
+  }
+  #reset-btn:disabled{
+    color:#4b6584;
+    border-color: #ffffff;
+    background-color: #ffffff;
+  }
+  #answer-btn:disabled{
+    color:#4b6584;
+    border-color: #ffffff;
+    background-color: #ffffff;
+  }
+  #exe-btn:disabled{
+    color:#ffffff;
+    border-color:#5dfdad ;
+    background-color: #5dfdad;
+  }
+
+  .twitter-icon-sm{
+    width:1.4rem;
+    height:1.4rem;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  
+  .facebook-icon-sm{
+    width:1.4rem;
+    height:1.4rem;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  
+  .twitter-btn{
+    width:1.4rem;
+    height:1.4rem;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  
+  .facebook-btn{
+    width:1.4rem;
+    height:1.4rem;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+
+
+
+/* radio-btn */
+.cp_ipradio {
+	width: 90%;
+	margin: 2em auto;
+	text-align: left;
+}
+.cp_ipradio ul {
+	margin: 0.5rem 0.5rem 2rem 0.5rem;
+	padding: 0.5rem 1rem;
+	list-style: none;
+	border: 1px solid #cccccc;
+}
+.cp_ipradio ul li {
+	display: inline;
+}
+.cp_ipradio .list_item {
+	margin: 0 0 0.5rem 0;
+	padding: 0;
+}
+.cp_ipradio label {
+	line-height: 135%;
+	position: relative;
+	margin: 0.5rem;
+	cursor: pointer;
+}
+.cp_ipradio .option-input {
+	position: relative;
+	margin: 0 1rem 0 0;
+	cursor: pointer;
+}
+.cp_ipradio .option-input:before {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0.125rem;
+	width: 0.75rem;
+	height: 0.75rem;
+	content: '';
+	-webkit-transition: -webkit-transform 0.4s cubic-bezier(0.45, 1.8, 0.5, 0.75);
+	        transition:         transform 0.4s cubic-bezier(0.45, 1.8, 0.5, 0.75);
+	-webkit-transform: scale(0, 0);
+	        transform: scale(0, 0);
+	border-radius: 50%;
+	background: #da3c41;
+}
+.cp_ipradio .option-input:checked:before {
+	-webkit-transform: scale(1, 1);
+	        transform: scale(1, 1);
+}
+.cp_ipradio .option-input:after {
+	position: absolute;
+	top: -0.25rem;
+	left: -0.125rem;
+	width: 1rem;
+	height: 1rem;
+	content: '';
+	border: 2px solid #f2f2f2;
+	border-radius: 50%;
+	background: #ffffff;
+}

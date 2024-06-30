@@ -1,0 +1,16 @@
+urllib3==1.26.15
+django==3.2.5
+djangorestframework
+djangorestframework-jwt
+django-axes
+django-markdownx
+Markdown
+stripe
+pandas
+uwsgi
+pydantic==1.*
+python-frontmatter
+djangorestframework_simplejwt
+django-cors-headers
+django-templated-mail
+

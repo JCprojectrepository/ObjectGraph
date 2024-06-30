@@ -1,0 +1,51 @@
+@use "../global" as g;
+
+.sidebar{
+  font-family: g.$noto-sans;
+  color: g.$white;
+  font-size: g.$text-h6;
+  top: 60px;
+  height:93vh;
+}
+.student_sidebar_menu {
+  color: g.$white;
+}
+.student_sidebar_menu :hover {
+  color: g.$white;
+  background-color: #494a6a;
+  text-decoration: none; 
+}
+.mentor_sidebar_menu {
+  color: g.$white;
+}
+.mentor_sidebar_menu :hover {
+  color: g.$white;
+  background-color: #494a6a;
+  text-decoration: none; 
+}
+.team_sidebar_menu {
+  color: g.$white;
+}
+.team_sidebar_menu :hover {
+  color: g.$white;
+  background-color: #494a6a;
+  text-decoration: none; 
+}
+.admin_sidebar_menu {
+  color: g.$white;
+}
+.admin_sidebar_menu :hover {
+  color: g.$white;
+  background-color: #407b63;
+  text-decoration: none; 
+}
+.sidebar_fixed {
+  position: sticky;
+  top: 60px;
+}
+
+
+
+
+
+

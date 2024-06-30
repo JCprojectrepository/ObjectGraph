@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+    {% load static %}
+    {% bootstrap_css %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>{% block title %}{{ title }}{% endblock %}</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'asset/img/logo/favicon.svg' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal-default-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href='{% static "asset/css/style.css" %}'>
+    <link rel="stylesheet" type="text/css" href='{% static "asset/css/remodal/remodal.css" %}'>
+    <link rel="stylesheet" type="text/css" href='{% static "asset/css/remodal/remodal-default-theme.css" %}'>
+    {% block extracss %}{% endblock %}
+</head>
+<body>
+    {% block content %}{% endblock %}
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jscroll/2.4.1/jquery.jscroll.js" integrity="sha512-AgWDJkG13uHcgm8NoCl1qcTk5gml73x2ZAkIe7ljOgT/pRdYYLbcGG1cY8GDOEQt/se3kdBf8t6IaAl8XFPOiw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src='{% static "asset/js/remodal/remodal.js" %}'></script>
+    <script src='{% static "asset/js/custom-slick.js" %}'></script>
+    {% block extrajs %}{% endblock %}
+</body>
+
+</html>

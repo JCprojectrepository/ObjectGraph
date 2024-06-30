@@ -1,0 +1,79 @@
+@use "../global" as g;
+
+
+
+/* font-family */
+
+.noto-100{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 100;
+}
+
+.noto-300{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+}
+.noto-400{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+}
+.noto-500{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+}
+.noto-600{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 600;
+}
+.noto-700{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+}
+.noto-900{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 900;
+}
+
+
+
+/* font size */
+
+.text-h1 {
+    font-size: g.$text-h1;
+}
+.text-h2 {
+    font-size: g.$text-h2;
+}
+.text-h3 {
+    font-size: g.$text-h3;
+}
+.text-h4 {
+    font-size: g.$text-h4;
+}
+.text-h5 {
+    font-size: g.$text-h5;
+}
+.text-h6 {
+    font-size: g.$text-h6;
+}
+.text-h7 {
+    font-size: g.$text-h7;
+}
+.text-h8 {
+    font-size: g.$text-h8;
+}
+.text-h9 {
+    font-size: g.$text-h9;
+}
+
+/* line height */
+.line-height-xs{
+    line-height:1.4;
+  }
+
+
+/* line height */
+.line-height-sm{
+    line-height:1.8;
+  }
+

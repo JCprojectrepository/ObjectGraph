@@ -1,0 +1,38 @@
+@use "../global" as g;
+.card-rg{
+    font-size: g.$text-h3;
+}
+
+.card-title{
+    font-size: g.$text-h8;
+    color: #000;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 0.25em 0.5em;/*上下 左右の余白*/
+    background: transparent;/*背景透明に*/
+}
+
+.plan-card--title{
+    font-size: g.$text-h7;
+    color: #000;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 600;
+    padding: 0em 0.5em 0em 0.5em;/*上下 左右の余白*/
+    background: transparent;/*背景透明に*/
+}
+.plan-card--price{
+    font-size: g.$text-h5;
+    font-weight: 600;
+    color: #9B361F;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 0em 0.5em 0em 0.5em;/*上下 左右の余白*/
+    background: transparent;/*背景透明に*/
+}
+.plan-card--text{
+    font-size: g.$text-h8;
+    color: #000;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 0em 0.5em 0em 0.5em;/*上下 左右の余白*/
+    background: transparent;/*背景透明に*/
+}

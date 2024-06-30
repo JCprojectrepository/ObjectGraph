@@ -1,0 +1,23 @@
+{% extends "common/base.html" %}
+{% load static %}
+{% bootstrap_css %}
+{% block title %}{{ title }} | CannabisCamp{% endblock %}
+{% block content %}
+{% include 'common/navbar.html' %}
+{% include 'common/component/section/ketvisual.html' %}
+<section id="" class="mt-5" >
+    <div class="contaienr-fluid">
+        <div class="row mt-5">
+            <div class="col-xl-6 text-center offset-xl-3 col-6 offset-3">
+                {% include 'common/component/table/information.html' %}
+                
+            </div>
+        </div>
+    </div>
+</section>
+{% include 'common/component/section/access.html' %}
+{% include 'common/footer.html' %}
+{% endblock %}
+{% block extrajs %}
+
+{% endblock %}

@@ -1,0 +1,161 @@
+@use "../global" as g;
+/* backgound-color */
+
+.bg-white{
+    background-color: g.$white;
+}
+.bg-black{
+    background-color: g.$black;
+}
+.bg-red{
+    background-color: g.$red;
+}
+.bg-yellow{
+    background-color: g.$yellow;
+}
+.bg-light-blue{
+    background-color: g.$light-blue;
+}
+.bg-blue{
+    background-color: g.$blue;
+}
+.bg-light-green{
+    background-color: g.$light-green;
+}
+.bg-green{
+    background-color: g.$green;
+}
+.bg-dark-green{
+    background-color: g.$dark-green;
+}
+.bg-super-light-gray{
+    background-color: g.$super-light-gray;
+}
+.bg-light-gray{
+    background-color: g.$light-gray;
+}
+.bg-gray{
+    background-color: g.$gray;
+}
+.bg-dark-gray{
+    background-color: g.$dark-gray;
+}
+.bg-light-navy{
+    background-color: g.$light-navy;
+}
+.bg-navy{
+    background-color: g.$navy;
+}
+.bg-orange{
+    background-color: g.$orange;
+}
+.bg-cream{
+    background-color: g.$cream;
+}
+.bg-sky-blue{
+    background-color: g.$sky-blue;
+}
+
+
+
+
+
+/* border-color */
+
+.bd-white{
+    border-color: g.$white;
+}
+.bd-black{
+    border-color: g.$black;
+}
+.bd-red{
+    border-color: g.$red;
+}
+.bd-yellow{
+    border-color: g.$yellow;
+}
+.bd-light-blue{
+    border-color: g.$light-blue;
+}
+.bd-blue{
+    border-color: g.$blue;
+}
+.bd-light-green{
+    border-color: g.$light-green;
+}
+.bd-green{
+    border-color: g.$green;
+}
+.bd-super-light-gray{
+    border-color: g.$super-light-gray;
+}
+.bd-light-gray{
+    border-color: g.$light-gray;
+}
+.bd-gray{
+    border-color: g.$gray;
+}
+
+
+/* color */
+
+.c-white{
+    color: g.$white;
+}
+.c-black{
+    color: g.$black;
+}
+.c-red{
+    color: g.$red;
+}
+.c-light-brown{
+    color:g.$light-brown;
+}
+.c-yellow{
+    color: g.$yellow;
+}
+.c-light-blue{
+    color: g.$light-blue;
+}
+.c-blue{
+    color: g.$blue;
+}
+.c-dark-blue{
+    color: g.$dark-blue;
+}
+.c-light-green{
+    color: g.$light-green;
+}
+.c-green{
+    color: g.$green;
+}
+.c-super-light-gray{
+    color: g.$super-light-gray;
+}
+.c-light-gray{
+    color: g.$light-gray;
+}
+.c-gray{
+    color: g.$gray;
+}
+.c-orange{
+    color: g.$orange;
+}
+.c-navy{
+    color: g.$navy;
+}
+
+
+/* opacity */
+.mainColor{
+    opacity: g.$mainColor;
+}
+
+.subColor{
+    opacity: g.$subColor;
+}
+
+.disabledColor{
+    opacity: g.$disabledColor;
+}
+

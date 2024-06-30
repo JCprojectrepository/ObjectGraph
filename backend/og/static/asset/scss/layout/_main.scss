@@ -1,0 +1,77 @@
+@use "../global" as g;
+
+.shadow-rg {
+    box-shadow: 4px 4px #000000;
+  }
+
+#firstview{
+    height: 100vh;
+}
+.firstview .top-message-title{
+    font-size: g.$text-h1;
+    margin-top: 20vh;
+}
+
+
+.top-header--top-bottom-bar {
+    padding: 0.5em 0;/*上下の余白*/
+    border-top: solid 3px #ffffff;/*上線*/
+    border-bottom: solid 3px #ffffff;/*下線*/
+  }
+
+
+.top-text--header{
+    font-size: g.$text-h4;
+}
+.top-text{
+    font-size: g.$text-h5;
+}
+
+// -------------- Key Visual -------------- //
+.section-keyvisual{
+    min-height: 50vh;
+}
+.section-keyvisual .top-message-title {
+    font-size: g.$text-h2;
+    font-weight: 400;
+    letter-spacing:0.08em;
+    margin-top: 20vh;
+}
+
+// -------------- price table -------------- //
+table.price-table td {
+    border: 2px solid #707070;
+    padding: 3px;
+    text-align: center;
+    vertical-align: middle;
+}
+table.price-table th {
+    border: 2px solid #707070;
+    padding: 3px;
+    text-align: center;
+    vertical-align: middle;
+}
+table.price-table .ex_border--lr {
+    border-right: 8px solid #1D7381;
+    border-left: 8px solid #1D7381;
+}
+table.price-table .ex_border--bottom {
+    border-bottom: 8px solid #1D7381;
+}
+table.price-table th {
+    font-size: g.$text-h6;
+}
+table.price-table td {
+    font-size: g.$text-h6;
+}
+table.price-table td.ex_border--lr {
+    background-color: rgb(218, 255, 243);
+    font-size: g.$text-h5;
+}
+table.price-table .border-none{
+    border: 0;
+}
+
+
+
+

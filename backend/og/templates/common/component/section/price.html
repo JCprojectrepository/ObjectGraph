@@ -1,0 +1,20 @@
+{% load static %}
+<section id="price" class="price mb-5">
+    <div class="container-fluid pt-5">
+        <h3 class="section-header">
+            <span class="c-dark-blue">P</span>rice
+            <p class="text-h7">ご利用料金</p>
+        </h3>
+        <div class="row mt-5">
+            <div class="col">
+                {% include 'common/component/table/accommodation_menu.html' %}
+                <div class="m-5"></div>
+                {% include 'common/component/table/food_menu.html' %}
+                <div class="m-5"></div>
+                {% include 'common/component/table/activity_menu.html' %}
+                <div class="m-5"></div>
+                {% include 'common/component/table/user_guide.html' %}       
+            </div>
+        </div>
+    </div>
+</section>

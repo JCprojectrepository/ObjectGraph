@@ -1,0 +1,18 @@
+@use "../global" as g;
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: g.$text-h8;
+	}
+
+p{
+	color: g.$black;
+}
+
+a{
+	color:g.$light-blue;
+}
+
+a:hover{
+	color:g.$blue;
+}

@@ -1,0 +1,29 @@
+{% extends "common/base.html" %}
+{% load static %}
+{% bootstrap_css %}
+{% block title %}CannabisCamp{% endblock %}
+{% block content %}
+{% include 'common/navbar.html' %}
+<section id="firstview" class="firstview" style="background-image:url({% static 'asset/img/photo/sample1.jpg' %});background-size: cover;">
+    <div class="flexbox justify-content-center align-items-center">
+        <div class="flex-item text-center">
+            <!-- <img src="{% static 'asset/img/photo/testlogo.png' %}" alt="" style="height:40vh;">-->
+            <p class="text-h1 c-white noto-600">Cannabis Camp</p>
+            <p class="text-h5 c-white noto-400" style="letter-spacing: 0.1rem;">自然と贅沢が交わる至福のグランピングテーマパーク</p>
+
+        </div>
+    </div>
+</section>
+{% include 'common/component/section/concept.html' %}
+{% include 'common/component/section/news.html' %}
+{% include 'common/component/section/feature.html' %}
+{% include 'common/component/section/usecase.html' %}
+{% include 'common/component/section/price.html' %}
+{% include 'common/component/section/access.html' %}
+
+
+{% include 'common/footer.html' %}
+{% endblock %}
+{% block extrajs %}
+
+{% endblock %}

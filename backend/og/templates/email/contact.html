@@ -1,0 +1,27 @@
+{% block subject %}
+【CannabisCamp】新しい問い合わせ - [{{contact_master.last_name}} {{contact_master.first_name}}]
+{% endblock subject  %}
+
+{% block text_body %}
+
+問い合わせ概要
+--------------------------------------------------
+ユーザー名: {{contact_master.last_name}} {{contact_master.first_name}} ({{contact_master.last_name_furigana}} {{contact_master.first_name_furigana}})
+連絡先: {{contact_master.email}}
+問い合わせ日時: {{contact_master.date}}
+--------------------------------------------------
+
+問い合わせ内容
+--------------------------------------------------
+{{contact_master.message}}
+--------------------------------------------------
+
+提案するアクション
+--------------------------------------------------
+- 問い合わせに対する返信の準備をお願いします。
+- 必要に応じて、追加情報の収集や対応計画の策定を行ってください。
+--------------------------------------------------
+
+ご確認の上、適切な対応をお願いいたします。
+
+{% endblock text_body %}

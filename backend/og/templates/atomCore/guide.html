@@ -1,0 +1,96 @@
+{% extends "common/base.html" %}
+{% load static %}
+{% bootstrap_css %}
+{% block title %}{{ title }} | CannabisCamp{% endblock %}
+{% block content %}
+{% include 'common/navbar.html' %}
+{% include 'common/component/section/ketvisual.html' %}
+{% load static %}
+<section id="" class="" >
+    <div class="contaienr-fluid">
+        <div class="text-center">
+            <p class="child-page--title mt-4">
+                人と体験と出会うための “記憶に残らない”空間。
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-6 offset-3 text-center">
+                <p class="text-h7 mb-5 noto-300">
+                    忙しい現代社会から離れて、贅沢な自然体験を提供しています。美しい環境に位置し、快適なテントやコテージでの宿泊、豪華な設備、そして自然に囲まれたアクティビティを楽しめます。心身をリラックスさせ、穏やかな時間を過ごすための特別な場所です。
+                </p>
+                <img class="img-fluid rounded" src="https://yatsugatake.bub-resort.com/wp-content/uploads/2023/05/map.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="features" class="features">
+    <div class="container-fluid pt-5">
+        <div class="row mt-5 mb-5">
+            <div class="col-xl-4 offset-xl-2 col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-12 mb-3">
+                <p class="header-sub--left text-center d-block d-xl-none">
+                    BBQ協会監修「本場のBBQを食す」
+                </p>
+                <p class="header-sub--left text-left d-none d-xl-block">
+                    BBQ協会監修「本場のBBQを食す」
+                </p>
+                <p class="text-h8 text-left line-height-sm d-none d-xl-block mr-5">
+                    ここにテキストが入ります
+                </p>
+                <p class="text-center line-height-rg d-block d-xl-none">
+                    ここにテキストが入ります
+                </p>
+            </div>
+            <div class="col-xl-4 offset-xl-0 col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-12 mb-3">
+                <img class="img-fluid rounded shadow-sm" src="https://yatsugatake.bub-resort.com/wp-content/uploads/2023/05/facilities-01.png" alt="">
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-xl-4 offset-xl-2 col-lg-8 offset-lg-2 d-none d-xl-block mb-3">
+                <img class="img-fluid rounded" src="https://yatsugatake.bub-resort.com/wp-content/uploads/2023/06/IMG_0529-scaled.jpg" alt="">
+            </div>
+            <div class="col-xl-6 offset-xl-0 col-lg-8 offset-lg-2 d-none d-xl-block mb-3">
+                <p class="header-sub--left text-left">
+                    女性や初心者に「愛があるキャンプ場」
+                </p>
+                <p class="text-h8 text-left line-height-rg">
+                    ここにテキストが入ります
+                </p>
+            </div>
+            <div class="col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-12 d-block d-xl-none mb-3">
+                <p class="header-sub--left text-center">
+                    女性や初心者に「愛があるキャンプ場」
+                </p>
+                <p class="text-h8 text-center line-height-rg">
+                    ここにテキストが入ります
+                </p>
+            </div>
+            <div class="col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-12 d-block d-xl-none mb-3">
+                <img class="img-fluid rounded shadow-sm" src="https://yatsugatake.bub-resort.com/wp-content/uploads/2023/06/IMG_0529-scaled.jpg" alt="">
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-xl-4 offset-xl-2 col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-12 mb-3">
+                <p class="header-sub--left text-center d-block d-xl-none">
+                誕生日会、野外会議などの「貸切可能」
+                </p>
+                <p class="header-sub--left text-left d-none d-xl-block">
+                    誕生日会、野外会議などの「貸切可能」
+                </p>
+                <p class="text-h8 text-left line-height-sm d-none d-xl-block mr-5">
+                    ここにテキストが入ります
+                </p>
+                <p class="text-center line-height-rg d-block d-xl-none">
+                    ここにテキストが入ります
+                </p>
+            </div>
+            <div class="col-xl-4 offset-xl-0 col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-12 mb-3">
+                <img class="img-fluid rounded shadow-sm" src="https://yatsugatake.bub-resort.com/wp-content/uploads/2023/06/DSC03691-scaled.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+{% include 'common/footer.html' %}
+{% endblock %}
+{% block extrajs %}
+
+{% endblock %}

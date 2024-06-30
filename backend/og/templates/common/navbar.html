@@ -1,0 +1,37 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white mt-2 ml-3 mr-3 pt-3 pb-3 rounded-lg shadow fixed-top">
+    <a href="" class="navbar-brand ml-2">
+        <img src="{% static 'asset/img/logo/code-college-logo-black.svg' %}" style="width:160px;" class="" alt="">
+    </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="ナビゲーションの切替">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse bg-white m-0" id="navbar">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+                <a class="nav-link tazugane-heavy ml-2 mr-2" href="{% url 'atomCore:index' %}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tazugane-heavy ml-2 mr-2" href="{% url 'atomCore:guide' %}">ご利用案内</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tazugane-heavy ml-2 mr-2" href="{% url 'atomCore:price' %}">ご利用料金</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tazugane-heavy ml-2 mr-2" href="{% url 'atomCore:facility' %}">施設概要</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link tazugane-heavy ml-2 mr-2" href="{% url 'atomCore:reserve' %}">予約方法</a>
+            </li>
+            {% if site_master.instagram %}
+            <li class="nav-item">
+                <a class="nav-link tazugane-heavy ml-2 mr-2" href="">instagram</a>
+            </li>
+            {% endif %}
+            <li class="nav-item">
+                <a class="nav-link tazugane-heavy ml-2 mr-2" href="{% url 'atomCore:contact' %}">お問い合わせ</a>
+            </li>
+        </ul>
+      </div>
+  </nav>

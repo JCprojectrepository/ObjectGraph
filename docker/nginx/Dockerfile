@@ -1,0 +1,5 @@
+FROM nginx:1.21.3-alpine
+
+RUN rm /etc/nginx/conf.d/default.conf
+ARG CONF_FILE="./docker/nginx/conf/dev/default.conf"
+ADD $CONF_FILE /etc/nginx/conf.d/default.conf

@@ -1,0 +1,63 @@
+{% extends "common/base.html" %}
+{% load static %}
+{% bootstrap_css %}
+{% block title %}{{ title }} | CannabisCamp{% endblock %}
+{% block content %}
+{% include 'common/navbar.html' %}
+{% include 'common/component/section/ketvisual.html' %}
+<div class="row mt-5">
+    <div class="col-md-4 offset-md-4 col-10 offset-1 mb-3">
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <form action="" method="POST">
+                {% csrf_token %}
+                <div class="c-red tazugane-bold">
+                    <p>{{ form.name.errors }}</p>
+                    <p>{{ form.furigana.errors }}</p>
+                    <p>{{ form.email.errors }}</p>
+                    <p>{{ form.tel.errors }}</p>
+                    <p>{{ form.text.errors }}</p>
+                </div>
+                <div class="mb-4">
+                    <small class="text-h8">{{ form.contact_type.label }}</small>
+                    <p>{{ form.contact_type }}</p>
+                </div>
+                <div class="mb-4">
+                    <small class="text-h8">{{ form.job.label }}</small>
+                    <p>{{ form.job }}</p>
+                </div>
+                <div class="mb-4">
+                    <small class="text-h8">{{ form.name.label }}</small>
+                    <p>{{ form.name }}</p>
+                </div>
+                <div class="mb-4">
+                    <small class="text-h8">{{ form.furigana.label }}</small>
+                    <p>{{ form.furigana }}</p>
+                </div>
+                <div class="mb-4">
+                    <small class="text-h8">{{ form.email.label }}</small>
+                    <p>{{ form.email }}</p>
+                </div>
+                <div class="mb-4">
+                    <small class="text-h8">{{ form.tel.label }}</small>
+                    <p>{{ form.tel }}</p>
+                </div>
+                <div class="mb-4">
+                    <small class="text-h8">{{ form.text.label }}</small>
+                    <p>{{ form.text }}</p>
+                </div>
+            </div>
+            <div class="text-center mb-5">
+                <button class="btn btn-blue text-h8 mr-2 pl-5 pr-5 rounded-pill shadow-sm" type="submit">
+                    送信
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+{% include 'common/footer.html' %}
+{% endblock %}
+{% block extrajs %}
+
+{% endblock %}

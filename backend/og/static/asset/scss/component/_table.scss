@@ -1,0 +1,15 @@
+@use "../global" as g;
+.table-title {  
+  font-size: g.$text-h6;
+  font-weight: 400;
+  letter-spacing:0.2em;
+  text-align: center;
+}
+
+
+.border-table tr:nth-child(odd) td {  
+    background-color: #ffffff;  
+  }
+.border-table tr:nth-child(even) td {  
+    background-color: g.$light-gray;
+  }

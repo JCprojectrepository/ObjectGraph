@@ -1,0 +1,21 @@
+{% extends "common/base.html" %}
+{% load static %}
+{% bootstrap_css %}
+{% block title %}{{ title }} | CannabisCamp{% endblock %}
+{% block content %}
+{% include 'common/navbar.html' %}
+{% include 'common/component/section/ketvisual.html' %}
+<div class="row mt-5">
+    <div class="col">
+        {% include 'common/component/table/accommodation_menu.html' %}
+        {% include 'common/component/table/food_menu.html' %}
+        {% include 'common/component/table/activity_menu.html' %}
+        {% include 'common/component/table/user_guide.html' %}         
+        {% include 'common/component/table/cancel_policy.html' %}        
+    </div>
+</div>
+{% include 'common/footer.html' %}
+{% endblock %}
+{% block extrajs %}
+
+{% endblock %}

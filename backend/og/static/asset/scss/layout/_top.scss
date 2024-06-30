@@ -1,0 +1,143 @@
+img {
+    -webkit-backface-visibility: hidden;
+  }
+
+
+
+/*---------------- area-size ----------------*/
+
+#nav-bar{
+    min-height:15vh
+}
+
+#top-area{
+    min-height:60vh;
+}
+
+#top-card{
+    min-height:55vh; 
+    border-width:5px;   
+}
+.service-top{
+    min-height:82vh;
+}
+
+#price-area{
+    min-height:100vh;
+}
+#customer-comment-area{
+    min-height:100vh;
+}
+#freeplan-explain-area{
+    min-height:50vh;
+}
+
+#howtointroduce-area{
+    min-height:50vh;
+}
+#faq-area{
+    min-height:50vh;
+}
+#media-area{
+    min-height:25vh;
+}
+#company-area{
+    min-height:25vh;
+}
+/*---------------- image-size ----------------*/
+
+.top-image{
+    width:100%;
+    height:100%;
+}
+
+
+
+/*---------------- first-view ----------------*/
+
+
+.main-image-upper{
+    height:100%;
+    width: 100%;
+}
+
+
+.main-btn{
+    height:80%;
+}
+.service-image{
+    height:100%;
+    width: 100%; 
+}
+
+
+.movie-wrap {
+    position: relative;
+    padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
+    height: 0;
+    overflow: hidden;
+}
+
+.movie-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.service-card{
+    height:100%;
+}
+
+/*-------------------------------- underline -----------------------------------*/
+  
+.top-heading{
+    padding-top: 0.2em;
+    padding-bottom: 0.3em;
+    border-bottom: 3px dashed #2bcbba;/* 下の線 */
+    color: #222;/* フォント色 */
+    text-align: center;/* テキストの位置 */
+}
+
+.top-heading-green{
+    padding-top: 0.2em;
+    padding-bottom: 0.3em;
+    border-bottom: 3px dashed #20bf6b;/* 下の線 */
+    color: #222;/* フォント色 */
+    text-align: center;/* テキストの位置 */
+}
+
+
+
+
+input[type=email] {
+    font-size: 16px;
+  }
+input[type=password] {
+    font-size: 16px;
+  }
+
+  /*---------smart phone---------*/
+
+@media screen and (min-width: 0px) {
+.card-body--rg{
+    min-height: 10vh;
+}
+
+  }
+
+  /*---------tablet---------*/
+
+  @media screen and (min-width: 768px) {
+    .card-body--rg{
+        min-height: 10vh;
+    }
+  }
+  /*---------pc---------*/
+
+  @media screen and (min-width: 1200px) {
+    .card-body--rg{
+    height: 16vh;
+    }
+  }

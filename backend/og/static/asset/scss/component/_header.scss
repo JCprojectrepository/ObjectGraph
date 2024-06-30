@@ -1,0 +1,38 @@
+@use "../global" as g;
+
+.section-header {
+    font-size: g.$text-h2;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing:0.1em;
+    position: relative;
+    padding: 20px 42px 0px 5px;
+    color: black;
+    line-height: 1.3;
+    z-index:-1;
+}
+
+.header-sub--left{
+    font-size: g.$text-h6;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 600;
+    padding: 0.25em 0.5em;/*上下 左右の余白*/
+    background: transparent;/*背景透明に*/
+    border-left: solid 5px #14162F;/*左線*/
+  }
+
+.child-page--header{
+    font-size: g.$text-h4;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 600;
+    padding: 0.25em 0.5em;/*上下 左右の余白*/
+    background: transparent;/*背景透明に*/
+    border-left: solid 5px #14162F;/*左線*/
+  }
+
+.child-page--title {
+    font-size: g.$text-h4;
+    letter-spacing: 0.2rem;
+    padding: 0.5em 0;/*上下の余白*/
+}

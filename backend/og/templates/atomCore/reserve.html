@@ -1,0 +1,12 @@
+{% extends "common/base.html" %}
+{% load static %}
+{% bootstrap_css %}
+{% block title %}{{ title }} | CannabisCamp{% endblock %}
+{% block content %}
+{% include 'common/navbar.html' %}
+{% include 'common/component/section/ketvisual.html' %}
+{% include 'common/footer.html' %}
+{% endblock %}
+{% block extrajs %}
+
+{% endblock %}

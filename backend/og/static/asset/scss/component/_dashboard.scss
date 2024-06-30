@@ -1,0 +1,7 @@
+@use "../global" as g;
+.dashboard-main-area{
+    padding: 1.0rem 1.5rem
+}
+.dashboard-title{
+    font-size: g.$text-h5;
+}
