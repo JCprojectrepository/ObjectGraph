@@ -6,5 +6,5 @@ from .handler.json import *
 app_name = 'atomAPIv1'
 
 urlpatterns = [
-    path('json/<str:id>/', JsonHandler.as_view(), name='json'),
+    path('json/<str:userid>/<str:objectid>/', JsonHandler.as_view(), name='json'),
 ]

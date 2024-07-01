@@ -16,14 +16,20 @@ logger = getLogger(__name__)
 
 class JsonHandler(APIView):
     authentication_classes = [NoAuthentication]
-    def get(self, request,id,format=None):
+    def get(self, request,userid,objectid,format=None):
         logger.info("PeriodUpdateHandler")
 
         # ../json/{id}.jsonを読み込み
         json_data = None
         try:
-            with open(os.path.join(JSONDIR, f"{id}.json"), "r") as f:
+            with open(os.path.join(JSONDIR, f"{userid}.json"), "r") as f:
                 json_data = json.load(f)
+                # JSONファイルの中でidがObjectIDと一致するものを取得
+                for obj in json_data:
+                    if obj["id"] == objectid:
+                        json_data = obj
+                        break
+
         except Exception as e:
             logger.error(e)
             # ステータスコードの設定

@@ -2,7 +2,7 @@
     {
         "id": "fhjhljkbsdfl",
         "type": "sequence",
-        "content": "This is the first article."
+        "content": "graph TD \\n A[Start] --> B[Process] \\n B --> C[End] \\n click A \"https://example.com\" \"Tooltip for link\" \\n click B \"https://example.com/process\" \"Go to process page\" \\n click C \"https://example.com/end\" \"End page\""
     },
     {
         "id": "vjkrfajdlgfh",
