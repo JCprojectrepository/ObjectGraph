@@ -14,7 +14,8 @@ const MyPage: React.FC = () => {
     useEffect(() => {
         const fetchJson = async () => {
             try {
-                const apiPath = `v1/test/`;
+                const jsonid = "jhivkewhjzxn";
+                const apiPath = `v1/json/${jsonid}`;
                 const response = await axios.get(`${apiPublicBaseUrl}/${apiPath}`);
                 if (response.data.status === 200) {
                     console.log(response.data)

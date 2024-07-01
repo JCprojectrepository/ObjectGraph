@@ -1,0 +1,17 @@
+[
+    {
+        "id": "fhjhljkbsdfl",
+        "type": "sequence",
+        "content": "This is the first article."
+    },
+    {
+        "id": "vjkrfajdlgfh",
+        "type": "video",
+        "content": "This is a video content."
+    },
+    {
+        "id": "nvkjdnslmn",
+        "type": "image",
+        "content": "This is an image content."
+    }
+]

@@ -1,10 +1,10 @@
 
 
 from django.urls import path
-from .handler.test import *
+from .handler.json import *
 
 app_name = 'atomAPIv1'
 
 urlpatterns = [
-    path('test/', TestHandler.as_view(), name='test'),
+    path('json/<str:id>/', JsonHandler.as_view(), name='json'),
 ]
