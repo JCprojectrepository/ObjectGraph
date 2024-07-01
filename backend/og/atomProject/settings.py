@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 from atomProject.conf import *
+from corsheaders.defaults import default_headers
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,24 +29,31 @@ SECRET_KEY = 'django-insecure-lg4r*zwp*9uwb)0@cj986*@77yvtr^3b8xf4saa0f1g7+5-0!@
 
 SITE_ID = 1
 
-ALLOWED_HOSTS = ["localhost","cannabis-camp.jp"]
+ALLOWED_HOSTS = ["*"]
 
 INTERNAL_IPS = ['127.0.0.1']
 
 CORS_ORIGIN_WHITELIST = [
-     "http://0.0.0.0:8000",
      'http://127.0.0.1:80',
      'http://localhost:80',
-     'http://localhost:8000',
+     'http://localhost:8080',
      'http://localhost',
-     "https://cannabis-camp.jp",
+     'http://127.0.0.1:3000',
+     'http://localhost:3000',
+     'http://127.0.0.1:31030',
+     'http://localhost:31030',
 ]
+
 
 
 CSRF_TRUSTED_ORIGINS = [
     'localhost', 
     '127.0.0.1'
     ]
+
+CORS_ALLOW_HEADERS = list(default_headers) + [
+    'UserID',
+]
 
 CORS_ALLOW_CREDENTIALS = True
 SESSION_COOKIE_SAMESITE = 'None' # default='Lax'
@@ -55,6 +63,7 @@ SESSION_COOKIE_SECURE = False
 
 INSTALLED_APPS = [
     "atomCore",
+    "atomAPIv1",
     'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',

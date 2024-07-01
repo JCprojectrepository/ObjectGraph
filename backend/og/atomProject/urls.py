@@ -13,7 +13,7 @@ from django.http import HttpResponse
 #}
 
 urlpatterns = [
-    path('api/v1/', include('atomCore.urls')),
+    path('v1/', include('atomAPIv1.urls')),
     path('admin/', admin.site.urls),
     #path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='sitemap'),
     #url(r'^robots.txt$', lambda r: HttpResponse("User-agent: *\nDisallow: \nSitemap:https://bookwatch.jp/sitemap.xml", content_type="text/plain")),
