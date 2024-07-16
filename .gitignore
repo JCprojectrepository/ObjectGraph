@@ -31,3 +31,4 @@ obj
 .installed.cfg
 .python-version
 mysql/*
+front/og/.env.*
