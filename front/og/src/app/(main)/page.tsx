@@ -1,20 +1,12 @@
-import Hero from '@/containers/hero'
-import NewsList from '@/containers/news'
-import Mission from '@/containers/mission'
-import Service from '@/containers/service'
-import Company from '@/containers/company'
-
-
-
-export default function Index(){
+import Auth from "@/components/Auth";
+ 
+const Home = () => {
   return (
-    <>
-        <Hero />
-        <Mission />
-        <NewsList />
-        <Service />
-        <Company />
-
-    </>
-  )
-}
+    <div>
+      <h1>Supabase + Nextjs Auth App</h1>
+      <Auth />
+    </div>
+  );
+};
+ 
+export default Home;

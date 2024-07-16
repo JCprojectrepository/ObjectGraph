@@ -18,58 +18,6 @@ services:
     networks:
       - og-net
     working_dir: /usr/src/app/og
-  web:
-    image: og-web
-    container_name: og-web
-    build:
-      context: . 
-      dockerfile: ./docker/web/Dockerfile
-    working_dir: /home/app
-    env_file: "./deploy/dev/local.env"
-    volumes:
-     - type: "bind"
-       source: "./backend"
-       target: "/home/app"
-    command: python3.8 /home/app/og/manage.py runserver 0.0.0.0:31030
-    ports:
-      - 31030:31030
-    networks:
-      - og-net
-  nginx:
-    image: og-proxy
-    container_name: og-proxy
-    build:
-      context: . 
-      dockerfile: ./docker/nginx/Dockerfile
-    ports:
-      - 8080:80
-    networks:
-      - og-net
-  mysql:
-    container_name: og-mysql
-    image: mysql:8.0
-    environment:
-      MYSQL_DATABASE: atom-mysql
-      MYSQL_USER: atom-user
-      MYSQL_ALLOW_EMPTY_PASSWORD: 'true'
-      TZ: 'Asia/Tokyo'
-    command: --default-authentication-plugin=mysql_native_password
-    secrets:
-        - mysql_root_password
-        - mysql_user_password
-    ports:
-      - 3306:3306
-    volumes:
-      - ./mysql:/var/lib/mysql 
-    networks:
-      - og-net
-
-
-secrets:
-  mysql_root_password:
-    file: ./docker/mysql/secrets/root_password.txt
-  mysql_user_password:
-    file: ./docker/mysql/secrets/user_password.txt
 
 networks:
   og-net:
